@@ -1,5 +1,5 @@
-input_str = input("Enter num: ")
-input_int = int(input_str)
-print(input_int)
-
-print(type(input_int))
+print(bool(10))
+print(bool('abc'))
+print(bool([]))
+print(bool([1, 2]))
+print(bool(None))
