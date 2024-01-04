@@ -1,5 +1,4 @@
-print(bool(10))
-print(bool('abc'))
-print(bool([]))
-print(bool([1, 2]))
-print(bool(None))
+bool_val = True
+int_val = 4.5
+
+print(int_val + bool_val)
