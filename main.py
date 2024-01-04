@@ -1,11 +1,5 @@
-my_name = "Timur"
+input_str = input("Enter num: ")
+input_int = int(input_str)
+print(input_int)
 
-print(id(my_name))
-
-my_num = 100
-
-print(id(my_num))
-
-other_num = my_num
-
-print(id(other_num))
+print(type(input_int))
