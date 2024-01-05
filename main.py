@@ -1,10 +1,19 @@
-user_inputs = [True, 'hi!', '145', 10.5]
-print(len(user_inputs))
+my_list = [True, 75, 'wow', 5.25, ['cool']]
 
-del user_inputs[1]
-print(user_inputs)
-print(len(user_inputs))
+print(my_list)
 
-del user_inputs[-1]
-print(user_inputs)
-print(len(user_inputs))
+my_list.pop(2)
+
+print(len(my_list))
+
+print(my_list)
+
+my_list.reverse()
+
+print(my_list)
+
+my_new_list = [5, 10]
+
+my_list.extend(my_new_list)
+
+print(my_list)
