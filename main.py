@@ -1,19 +1,18 @@
-my_list = [True, 75, 'wow', 5.25, ['cool']]
+my_dict = {}
 
-print(my_list)
+key_1 = input("insert key 1: ")
+key_1_value = input("insert key 1 value: ")
 
-my_list.pop(2)
+my_dict[key_1] = key_1_value
 
-print(len(my_list))
+key_2 = input("insert key 1: ")
+key_2_value = input("insert key 1 value: ")
 
-print(my_list)
+my_dict[key_2] = key_2_value
 
-my_list.reverse()
+key_3 = input("insert key 1: ")
+key_3_value = input("insert key 1 value: ")
 
-print(my_list)
+my_dict[key_3] = key_3_value
 
-my_new_list = [5, 10]
-
-my_list.extend(my_new_list)
-
-print(my_list)
+print(my_dict)
