@@ -1,18 +1,13 @@
-my_dict = {}
+set_1 = {1, 2, 3, 4}
 
-key_1 = input("insert key 1: ")
-key_1_value = input("insert key 1 value: ")
+set_1.add(5)
 
-my_dict[key_1] = key_1_value
+print(set_1)
 
-key_2 = input("insert key 1: ")
-key_2_value = input("insert key 1 value: ")
+set_2 = {2, 4, 6, 8}
 
-my_dict[key_2] = key_2_value
+set_3 = set_1.intersection(set_2)
 
-key_3 = input("insert key 1: ")
-key_3_value = input("insert key 1 value: ")
+list = list(set_3)
 
-my_dict[key_3] = key_3_value
-
-print(my_dict)
+print(list)
