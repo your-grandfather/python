@@ -1,6 +1,7 @@
-rrr = range(0, 33, 3)
-my_list = []
-for n in rrr:
-    my_list.append(n)
+def my_fn(a, b):
+    a = a + 1
+    c = a + b
+    return c
 
-print(my_list)
+
+print(my_fn(10, 3))
