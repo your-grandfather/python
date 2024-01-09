@@ -1,7 +1,14 @@
-def my_fn(a, b):
-    a = a + 1
-    c = a + b
-    return c
+def inc_person_age(person):
+    person_copy = person.copy()
+    person_copy['age'] += 1
+    return person_copy
 
 
-print(my_fn(10, 3))
+person_one = {
+    'name': 'Bob',
+    'age': 21
+}
+
+new_person = inc_person_age(person_one)
+print(new_person['age'])
+print(person_one['age'])
