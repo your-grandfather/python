@@ -1,14 +1,8 @@
-def inc_person_age(person):
-    person_copy = person.copy()
-    person_copy['age'] += 1
-    return person_copy
+def merge_lists_to_dict(l1, l2):
+    return dict(zip(l1, l2))
 
 
-person_one = {
-    'name': 'Bob',
-    'age': 21
-}
+list_1 = ['a', 'b', 'c', 'd']
+list_2 = [True, False, False, False]
 
-new_person = inc_person_age(person_one)
-print(new_person['age'])
-print(person_one['age'])
+print(merge_lists_to_dict(list_1, list_2))
