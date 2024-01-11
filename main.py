@@ -81,16 +81,34 @@
 # (dict_a == dict_b) and print("Dictionaries are equal")
 #
 # 29
+#
+# button = {
+#     'width': 200,
+#     'text': 'Buy',
+# }
+#
+# red_button = {
+#     'color': 'red',
+# }
+#
+# button_new = {**button, **red_button, }
+#
+# print(button_new)
+#
+# 31
+# my_name = 'Tim'
+# my_hobby = 'running'
+# time = 8
+#
+# info = f"{my_name} do not likes {my_hobby} at {time} o'clock"
+# info = str.title(info)
+# print(info)
+#
+# 32
+def greeting(greet):
+    return lambda name: f"{greet}, {name}!"
 
-button = {
-    'width': 200,
-    'text': 'Buy',
-}
 
-red_button = {
-    'color': 'red',
-}
+morning_greeting = greeting("Good Morning")
 
-button_new = {**button, **red_button, }
-
-print(button_new)
+print(morning_greeting(input("What is your name? ")))
