@@ -131,8 +131,10 @@ def image_info(img):
 
 
 image5136 = {
-    'image_id': 5136,
+    'image_i': 5136,
     'image_title': 'my cat',
 }
-
-print(image_info(image5136))
+try:
+    print(image_info(image5136))
+except TypeError as e:
+    print(e)
