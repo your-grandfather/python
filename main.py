@@ -68,14 +68,29 @@
 # print(True in a)
 #
 # 28
+#
+# dict_a = {
+#     'key1': 'value1',
+#     'key2': 'value2',
+# }
+# dict_b = {
+#     'key1': 'value1',
+#     'key2': 'value2',
+# }
+#
+# (dict_a == dict_b) and print("Dictionaries are equal")
+#
+# 29
 
-dict_a = {
-    'key1': 'value1',
-    'key2': 'value2',
-}
-dict_b = {
-    'key1': 'value1',
-    'key2': 'value2',
+button = {
+    'width': 200,
+    'text': 'Buy',
 }
 
-(dict_a == dict_b) and print("Dictionaries are equal")
+red_button = {
+    'color': 'red',
+}
+
+button_new = {**button, **red_button, }
+
+print(button_new)
