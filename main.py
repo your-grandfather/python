@@ -39,12 +39,19 @@
 #
 # process_number(entered_num, print_number_info)
 # process_number(entered_num, print_square_num)
+#
+# c = 5
+#
+#
+# def my_fn(a, b):
+#     d = 10
+#     print(c)
+#     print(a, b)
+#     print(dir())
 
-c = 5
+my_car = {
+    'brand': 'Toyota',
+    'price': 10000
+}
 
-
-def my_fn(a, b):
-    print(a, b)
-
-
-print(dir())
+print('brand' in my_car)
