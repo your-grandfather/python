@@ -114,11 +114,25 @@
 # print(morning_greeting(input("What is your name? ")))
 #
 # 33
-try:
-    print(10 / 0)
-except Exception as e:
-    print(e)
-else:
-    print("There was no error")
-finally:
-    print('Continue...')
+# try:
+#     print(10 / 0)
+# except Exception as e:
+#     print(e)
+# else:
+#     print("There was no error")
+# finally:
+#     print('Continue...')
+
+def image_info(img):
+    if ('image_id' not in img) or ('image_title' not in img):
+        raise TypeError("Keys image_id and image_title must be present")
+
+    return f"Image {img['image_title']} has id {img['image_id']}"
+
+
+image5136 = {
+    'image_id': 5136,
+    'image_title': 'my cat',
+}
+
+print(image_info(image5136))
