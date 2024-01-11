@@ -105,10 +105,20 @@
 # print(info)
 #
 # 32
-def greeting(greet):
-    return lambda name: f"{greet}, {name}!"
-
-
-morning_greeting = greeting("Good Morning")
-
-print(morning_greeting(input("What is your name? ")))
+# def greeting(greet):
+#     return lambda name: f"{greet}, {name}!"
+#
+#
+# morning_greeting = greeting("Good Morning")
+#
+# print(morning_greeting(input("What is your name? ")))
+#
+# 33
+try:
+    print(10 / 0)
+except Exception as e:
+    print(e)
+else:
+    print("There was no error")
+finally:
+    print('Continue...')
