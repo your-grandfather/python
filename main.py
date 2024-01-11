@@ -48,10 +48,34 @@
 #     print(c)
 #     print(a, b)
 #     print(dir())
+#
+# 27
+#
+# my_car = {
+#     'brand': 'Toyota',
+#     'price': 10000
+# }
+#
+# print('brand' in my_car)
+#
+# a = {3, True, 'cook'}
+# b = {3, True, 'cook'}
+#
+# print(a == b)
+#
+# print(a is b)
+#
+# print(True in a)
+#
+# 28
 
-my_car = {
-    'brand': 'Toyota',
-    'price': 10000
+dict_a = {
+    'key1': 'value1',
+    'key2': 'value2',
+}
+dict_b = {
+    'key1': 'value1',
+    'key2': 'value2',
 }
 
-print('brand' in my_car)
+(dict_a == dict_b) and print("Dictionaries are equal")
