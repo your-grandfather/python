@@ -152,16 +152,34 @@
 #
 #
 # print(user_info(*user_data))
+#
+# dicts_list = [{'value1': 'value1-1', 'value2': 'value1-2', }, {'value1': 'value2-1', 'value2': 'value2-2', },
+#               {'value1': 'value3-1', 'value2': 'value3-2', }]
+# dict1, dict2, dict3 = dicts_list
+#
+#
+# def fn(value1, value2):
+#     return f"{value1} and {value2}"
+#
+#
+# print(fn(**dict1))
+# print(fn(**dict2))
+# print(fn(**dict3))
+#
+# 35
 
-dicts_list = [{'value1': 'value1-1', 'value2': 'value1-2', }, {'value1': 'value2-1', 'value2': 'value2-2', },
-              {'value1': 'value3-1', 'value2': 'value3-2', }]
-dict1, dict2, dict3 = dicts_list
+def route_info(dict1):
+    if dict1.get('distance') and dict1['distance'] is int:
+        return f"Distance to your destination is {dict1['distance']}"
+    if dict1.get('speed') and dict1.get('time'):
+        return f"Distance to your destination is {dict1['speed'] * dict1['time']}"
+    return f"No distance info is available"
 
 
-def fn(value1, value2):
-    return f"{value1} and {value2}"
+route = {
+    'speed': 20,
+    # 'distance': 40,
+    # 'time': 3,
+}
 
-
-print(fn(**dict1))
-print(fn(**dict2))
-print(fn(**dict3))
+print(route_info(route))
