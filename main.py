@@ -122,19 +122,36 @@
 #     print("There was no error")
 # finally:
 #     print('Continue...')
+#
+# def image_info(img):
+#     if ('image_id' not in img) or ('image_title' not in img):
+#         raise TypeError("Keys image_id and image_title must be present")
+#
+#     return f"Image {img['image_title']} has id {img['image_id']}"
+#
+#
+# image5136 = {
+#     'image_i': 5136,
+#     'image_title': 'my cat',
+# }
+# try:
+#     print(image_info(image5136))
+# except TypeError as e:
+#     print(e)
+#
+# 34
 
-def image_info(img):
-    if ('image_id' not in img) or ('image_title' not in img):
-        raise TypeError("Keys image_id and image_title must be present")
-
-    return f"Image {img['image_title']} has id {img['image_id']}"
-
-
-image5136 = {
-    'image_i': 5136,
-    'image_title': 'my cat',
+user_profile = {
+    'name': 'Timur',
+    'comments_qty': 23,
 }
-try:
-    print(image_info(image5136))
-except TypeError as e:
-    print(e)
+
+
+def user_info(name, comments_qty=0):
+    if not comments_qty:
+        return f"{name} has no comments"
+
+    return f"{name} has {comments_qty} comments"
+
+
+print(user_info(user_profile))
