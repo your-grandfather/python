@@ -140,18 +140,28 @@
 #     print(e)
 #
 # 34
+#
+# user_data = ['Timur', 23]
+#
+#
+# def user_info(name, comments_qty):
+#     if not comments_qty:
+#         return f"{name} has no comments"
+#
+#     return f"{name} has {comments_qty} comments"
+#
+#
+# print(user_info(*user_data))
 
-user_profile = {
-    'name': 'Timur',
-    'comments_qty': 23,
-}
+dicts_list = [{'value1': 'value1-1', 'value2': 'value1-2', }, {'value1': 'value2-1', 'value2': 'value2-2', },
+              {'value1': 'value3-1', 'value2': 'value3-2', }]
+dict1, dict2, dict3 = dicts_list
 
 
-def user_info(name, comments_qty=0):
-    if not comments_qty:
-        return f"{name} has no comments"
-
-    return f"{name} has {comments_qty} comments"
+def fn(value1, value2):
+    return f"{value1} and {value2}"
 
 
-print(user_info(user_profile))
+print(fn(**dict1))
+print(fn(**dict2))
+print(fn(**dict3))
