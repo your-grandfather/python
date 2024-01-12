@@ -167,19 +167,31 @@
 # print(fn(**dict3))
 #
 # 35
+#
+# def route_info(dict1):
+#     if dict1.get('distance') and dict1['distance'] is int:
+#         return f"Distance to your destination is {dict1['distance']}"
+#     if dict1.get('speed') and dict1.get('time'):
+#         return f"Distance to your destination is {dict1['speed'] * dict1['time']}"
+#     return f"No distance info is available"
+#
+#
+# route = {
+#     'speed': 20,
+#     'distance': 40.3,
+#     'time': 3,
+# }
+#
+# print(route_info(route))
+#
+# 36
+#
+# my_img = ('1920', '1080', 4)
+#
+# if len(my_img) == 2:
+#     print(f"{my_img[0]}x{my_img[1]}")
+# else:
+#     print("Incorrect image formatting")
 
-def route_info(dict1):
-    if dict1.get('distance') and dict1['distance'] is int:
-        return f"Distance to your destination is {dict1['distance']}"
-    if dict1.get('speed') and dict1.get('time'):
-        return f"Distance to your destination is {dict1['speed'] * dict1['time']}"
-    return f"No distance info is available"
-
-
-route = {
-    'speed': 20,
-    'distance': 40.3,
-    'time': 3,
-}
-
-print(route_info(route))
+string1 = "kjsdjkhsdkjfsdjkhfsdjkhsdkhsdhkjfkjh"
+print("String is short") if len(string1) < 80 else print("String is long")
