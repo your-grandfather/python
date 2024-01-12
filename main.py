@@ -179,7 +179,7 @@ def route_info(dict1):
 route = {
     'speed': 20,
     'distance': 40,
-    'time': 3,
+    # 'time': 3,
 }
 
 print(route_info(route))
