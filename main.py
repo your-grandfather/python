@@ -192,6 +192,37 @@
 #     print(f"{my_img[0]}x{my_img[1]}")
 # else:
 #     print("Incorrect image formatting")
-
-string1 = "kjsdjkhsdkjfsdjkhfsdjkhsdkhsdhkjfkjh"
-print("String is short") if len(string1) < 80 else print("String is long")
+#
+# string1 = "kjsdjkhsdkjfsdjkhfsdjkhsdkhsdhkjfkjh"
+# print("String is short") if len(string1) < 80 else print("String is long")
+#
+# 37
+#
+# my_dict = {'id': 124, 'title': 'test', }
+# for k, v in my_dict.items():
+#     print(k, v)
+#
+# for num in range(0, 10, 3):
+#     print(num)
+#
+#
+# def filter_list(list1, value_type):
+#     new_list2 = []
+#     for item in list1:
+#         if type(item) is value_type:
+#             new_list2.append(item)
+#     print(new_list2)
+#
+#
+# filter_list([1, 2, 'ddd', 3, 4, 5, 'abc'], int)
+#
+#
+# def filter_list2(list2, value_type):
+#     def check_element_type(elem):
+#         return type(elem) is value_type
+#
+#     return list(filter(check_element_type, list2))
+#
+#
+# res = filter_list2([1, 10, 'abc', 5.5], int)
+# print(res)
