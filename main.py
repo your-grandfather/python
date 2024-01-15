@@ -226,3 +226,28 @@
 #
 # res = filter_list2([1, 10, 'abc', 5.5], int)
 # print(res)
+#
+# 38
+#
+# import random
+#
+# random_num = random.randint(1, 5)
+# while True:
+#     num = int(input("Guess the number fom 1 to 5: "))
+#     if num != random_num:
+#         print("Try again...")
+#         continue
+#     print("Congratulations!", random_num)
+#     break
+#
+# while True:
+#     num1 = float(input("Enter first number: "))
+#     num2 = 0
+#     while num2 == 0:
+#         num2 = float(input("Enter second number (not 0!): "))
+#     print(f"{num1}/{num2}={num1 / num2}")
+#     cont = input("Do you want to continue?(y/n): ")
+#     if cont == 'y':
+#         continue
+#     elif cont == 'n':
+#         break
