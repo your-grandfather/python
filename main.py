@@ -251,3 +251,25 @@
 #         continue
 #     elif cont == 'n':
 #         break
+#
+# 39
+#
+# my_scores = [10, 7, 14]
+#
+# scores = {k: v for k, v in enumerate(my_scores)}
+#
+# print(scores)
+# print(my_scores)
+#
+# my_dict = {
+#     'k1': 'value1',
+#     'k2': 'value2',
+#     'k3': 'value3',
+# }
+#
+# upper_d = {k: str.upper(v) for k, v in my_dict.items()}
+# print(upper_d)
+#
+# my_list = ['qwer', 'qwe', 'qwerty', 'qw', 'asdf']
+# new_list = [v for v in my_list if len(v) > 3]
+# print(new_list)
