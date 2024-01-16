@@ -273,3 +273,18 @@
 # my_list = ['qwer', 'qwe', 'qwerty', 'qw', 'asdf']
 # new_list = [v for v in my_list if len(v) > 3]
 # print(new_list)
+#
+# from sys import getsizeof
+#
+# squares_gen = (num * num for num in range(100000))
+#
+# print(getsizeof(squares_gen))
+#
+# for elem in squares_gen:
+#     print(elem)
+#     if elem == 100:
+#         break
+#
+# squares_list = [num * num for num in range(100000)]
+#
+# print(getsizeof(squares_list))
