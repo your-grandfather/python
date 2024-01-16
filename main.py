@@ -338,3 +338,20 @@
 # img1.resize('1280x960')
 #
 # print(img1.resolution)
+#
+# class Comment:
+#     total_comments = 0
+#
+#     def __init__(self, text):
+#         self.text = text
+#         self.votes_qty = 0
+#         Comment.total_comments += 1
+#
+#
+# comment_1 = Comment("First comment")
+#
+# print(Comment.total_comments)
+#
+# comment_2 = Comment("Second comment")
+#
+# print(Comment.total_comments)
