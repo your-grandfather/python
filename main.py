@@ -288,3 +288,53 @@
 # squares_list = [num * num for num in range(100000)]
 #
 # print(getsizeof(squares_list))
+#
+# 40
+#
+# class Car:
+#     def move(self):
+#         print("Car is moving")
+#
+#     def stop(self):
+#         print("Car stopped")
+#
+#
+# my_car = Car()
+#
+# my_car.move()
+# my_car.stop()
+#
+# my_second_car = Car()
+# class Comment:
+#     def __init__(self, text):
+#         self.text = text
+#         self.votes_qty = 0
+#
+#     def upvote(self):
+#         self.votes_qty += 1
+#
+#
+# my_comment = Comment("My comment")
+#
+# print(my_comment.text)
+# print(my_comment.votes_qty)
+#
+# my_comment.upvote()
+#
+# class Image:
+#     def __init__(self, resolution, title, extension):
+#         self.resolution = resolution
+#         self.title = title
+#         self.extension = extension
+#
+#     def resize(self, new_resolution):
+#         self.resolution = new_resolution
+#
+#
+# img1 = Image('640x480', 'grib', '.grb')
+#
+# print(img1.resolution)
+#
+# img1.resize('1280x960')
+#
+# print(img1.resolution)
