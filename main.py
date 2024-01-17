@@ -355,3 +355,39 @@
 # comment_2 = Comment("Second comment")
 #
 # print(Comment.total_comments)
+#
+# 41
+# class Comment:
+#     def __init__(self, text):
+#         self.text = text
+#         self.votes_qty = 0
+#
+#     def upvote(self):
+#         self.votes_qty += 1
+#
+#     def __add__(self, other):
+#         return (f"{self.text} {other.text}", self.votes_qty + other.votes_qty)
+#
+#     def __eq__(self, other):
+#         return self.text == other.text and self.votes_qty == other.votes_qty
+#
+#
+# first_comment = Comment("123")
+# first_comment.upvote()
+# second_comment = Comment("123")
+# second_comment.upvote()
+# print(first_comment + second_comment)
+# print(first_comment == second_comment)
+
+class ExtendedList(list):
+    def print_list_info(self):
+        print(f"List has {len(self)} element(s)")
+
+
+custom_list = ExtendedList([3, 5, 2])
+
+custom_list.print_list_info()
+
+custom_list.append(7)
+
+custom_list.print_list_info()
