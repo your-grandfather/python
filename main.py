@@ -378,16 +378,33 @@
 # second_comment.upvote()
 # print(first_comment + second_comment)
 # print(first_comment == second_comment)
+#
+# class ExtendedList(list):
+#     def print_list_info(self):
+#         print(f"List has {len(self)} element(s)")
+#
+#
+# custom_list = ExtendedList([3, 5, 2])
+#
+# custom_list.print_list_info()
+#
+# custom_list.append(7)
+#
+# custom_list.print_list_info()
+#
+# 44
 
-class ExtendedList(list):
-    def print_list_info(self):
-        print(f"List has {len(self)} element(s)")
+import json
 
+my_dict = {
+    "key1": "value1",
+    "key2": 2,
+    "key3": True,
+    "key4": [4, 44, 4],
+}
+j_dict = json.dumps(my_dict)
+print(j_dict)
+print(type(j_dict))
 
-custom_list = ExtendedList([3, 5, 2])
-
-custom_list.print_list_info()
-
-custom_list.append(7)
-
-custom_list.print_list_info()
+conv_json = json.loads(j_dict)
+print(conv_json)
