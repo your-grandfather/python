@@ -35,9 +35,20 @@
 # print(string_to_array(aaa))
 #
 # 4
-def abbrev_name(name):
-    a = name.title().split()
-    return f"{a[0][0]}.{a[1][0]}"
+# def abbrev_name(name):
+#     a = name.title().split()
+#     return f"{a[0][0]}.{a[1][0]}"
+#
+#
+# print(abbrev_name('tim malikov'))
+#
+# 5
+def invert(lst):
+    new_lst = []
+    for a in lst:
+        a *= -1
+        new_lst.append(a)
+    return new_lst
 
 
-print(abbrev_name('tim malikov'))
+print(invert([5, -3, 1]))
