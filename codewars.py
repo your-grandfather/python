@@ -23,3 +23,21 @@
 # print(find_smallest_int(my_list))
 #
 # 3
+# def string_to_array(s):
+#     if s == '':
+#         return ''
+#     else:
+#         return s.split()
+#
+#
+# aaa = ''
+#
+# print(string_to_array(aaa))
+#
+# 4
+def abbrev_name(name):
+    a = name.title().split()
+    return f"{a[0][0]}.{a[1][0]}"
+
+
+print(abbrev_name('tim malikov'))
