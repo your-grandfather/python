@@ -54,6 +54,15 @@
 # print(invert([5, -3, 1]))
 #
 # 6
-
-def lovefunk(flower1, flower2):
-    return not (flower1 + flower2) % 2 == 0
+#
+# def lovefunk(flower1, flower2):
+#     return not (flower1 + flower2) % 2 == 0
+#
+# 7
+#
+# def paperwork(n, m):
+#     if n < 0 or m < 0:
+#         return 0
+#     return n * m
+#
+# 8
