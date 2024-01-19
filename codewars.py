@@ -14,3 +14,12 @@
 # print(square_sum(my_list))
 
 # 2
+# def find_smallest_int(arr):
+#     return min(arr)
+#
+#
+# my_list = [34, -345, -1, 100]
+#
+# print(find_smallest_int(my_list))
+#
+# 3
