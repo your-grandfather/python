@@ -43,12 +43,17 @@
 # print(abbrev_name('tim malikov'))
 #
 # 5
-def invert(lst):
-    new_lst = []
-    for a in lst:
-        a *= -1
-        new_lst.append(a)
-    return new_lst
+# def invert(lst):
+#     new_lst = []
+#     for a in lst:
+#         a *= -1
+#         new_lst.append(a)
+#     return new_lst
+#
+#
+# print(invert([5, -3, 1]))
+#
+# 6
 
-
-print(invert([5, -3, 1]))
+def lovefunk(flower1, flower2):
+    return not (flower1 + flower2) % 2 == 0
