@@ -101,3 +101,16 @@
 #
 # 15
 #
+# def solution(text, ending):
+#     if text.rfind(ending) == abs((len(text)) - (len(ending))):
+#         return True
+#     else:
+#         return False
+#
+#
+# print(solution('sensei', 'i'))
+# print('sensei'.rfind('i'))
+#
+# 16
+
+def are_you_playing_banjo(name):
