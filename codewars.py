@@ -66,3 +66,22 @@
 #     return n * m
 #
 # 8
+# def find_needle(haystack):
+#     return f"found the needle at position {haystack.index('needle')}"
+#
+# 9
+# def remove_char(s):
+#     return s[1:-1]
+#
+# 10
+#
+# def calculate_time(battery, charger):
+#     return round(((0.85 * battery / charger) + (0.1 * battery / (charger / 2)) + (0.05 * battery / (charger / 5))), 2)
+#
+# 12
+# def descending_order(num):
+#     print(int(''.join(sorted(str(num), reverse=True))))
+#
+# descending_order(15)
+#
+# 13
