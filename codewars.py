@@ -93,3 +93,11 @@
 # print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
 #
 # 14
+# def find_average(numbers):
+#     if len(numbers) != 0:
+#         return sum(numbers) / len(numbers)
+#     else:
+#         return 0
+#
+# 15
+#
