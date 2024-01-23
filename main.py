@@ -393,18 +393,39 @@
 # custom_list.print_list_info()
 #
 # 44
+#
+# import json
+#
+# my_dict = {
+#     "key1": "value1",
+#     "key2": 2,
+#     "key3": True,
+#     "key4": [4, 44, 4],
+# }
+# j_dict = json.dumps(my_dict)
+# print(j_dict)
+# print(type(j_dict))
+#
+# conv_json = json.loads(j_dict)
+# print(conv_json)
+#
+# 45
+from pathlib import Path
 
-import json
+Path('.') / 'files'
 
-my_dict = {
-    "key1": "value1",
-    "key2": 2,
-    "key3": True,
-    "key4": [4, 44, 4],
-}
-j_dict = json.dumps(my_dict)
-print(j_dict)
-print(type(j_dict))
+with open('./files/first.txt', 'w') as file1:
+    file1.write("First string\nSecond string\n")
 
-conv_json = json.loads(j_dict)
-print(conv_json)
+with open('./files/first.txt') as file1:
+    print(file1.read())
+
+with open('./files/second.txt', 'w') as file2:
+    file2.write("First string\nSecond string\n")
+
+with open('./files/second.txt') as file2:
+    print(file2.readlines())
+
+Path('./files/first.txt').unlink()
+Path('./files/second.txt').unlink()
+Path('./files').rmdir()
