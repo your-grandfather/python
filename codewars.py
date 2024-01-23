@@ -112,9 +112,19 @@
 # print('sensei'.rfind('i'))
 #
 # 16
-
+#
 # def are_you_playing_banjo(name):
 #     if (name.lower()[0]) == 'r':
 #         return f"{name} plays banjo"
 #     else:
 #         return f"{name} does not play banjo"
+#
+# 17
+#
+# def square_digits(num):
+#     num_str = str(num)
+#     result = ''.join(str(int(digit) ** 2) for digit in num_str)
+#     return int(result)
+#
+#
+# print(square_digits(9119))
