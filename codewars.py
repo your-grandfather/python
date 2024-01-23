@@ -128,3 +128,10 @@
 #
 #
 # print(square_digits(9119))
+#
+# 18
+def is_square(n):
+    return isinstance(n ** 0.5, float) and (n ** 0.5).is_integer()
+
+
+print(is_square(-1))
