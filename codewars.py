@@ -130,8 +130,23 @@
 # print(square_digits(9119))
 #
 # 18
-def is_square(n):
-    return isinstance(n ** 0.5, float) and (n ** 0.5).is_integer()
-
-
-print(is_square(-1))
+# def is_square(n):
+#     return isinstance(n ** 0.5, float) and (n ** 0.5).is_integer()
+#
+#
+# print(is_square(-1))
+#
+# 19
+# def catch_sign_change(lst):
+#     res = 0
+#     for i in range(1, len(lst)):
+#         if (lst[i] < 0 <= lst[i - 1]) or (lst[i] >= 0 > lst[i - 1]):
+#             res += 1
+#     return res
+#
+#
+# bbb = [1, -5, -4, 4, -5]
+# print(catch_sign_change(bbb))
+#
+# 20
+def series_sum(n):
