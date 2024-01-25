@@ -410,22 +410,43 @@
 # print(conv_json)
 #
 # 45
-from pathlib import Path
+# from pathlib import Path
+#
+# Path('.') / 'files'
+#
+# with open('./files/first.txt', 'w') as file1:
+#     file1.write("First string\nSecond string\n")
+#
+# with open('./files/first.txt') as file1:
+#     print(file1.read())
+#
+# with open('./files/second.txt', 'w') as file2:
+#     file2.write("First string\nSecond string\n")
+#
+# with open('./files/second.txt') as file2:
+#     print(file2.readlines())
+#
+# Path('./files/first.txt').unlink()
+# Path('./files/second.txt').unlink()
+# Path('./files').rmdir()
+#
+# 50
+import re
 
-Path('.') / 'files'
 
-with open('./files/first.txt', 'w') as file1:
-    file1.write("First string\nSecond string\n")
+def check_password(passw):
+    pass_check_pattern1 = re.compile("........+")
+    pass_check_pattern2 = re.compile(r"^.*[a-z]+.*$")
+    pass_check_pattern3 = re.compile(r"^.*[A-Z]+.*$")
+    pass_check_pattern4 = re.compile(r"^.*[0-9]+.*$")
+    pass_check_pattern5 = re.compile(r"^.*[!@#$%^&*()]+.*$")
 
-with open('./files/first.txt') as file1:
-    print(file1.read())
+    if pass_check_pattern1.fullmatch(passw) and pass_check_pattern2.fullmatch(passw) and pass_check_pattern3.fullmatch(
+            passw) and pass_check_pattern4.fullmatch(passw) and pass_check_pattern5.fullmatch(
+        passw):
+        return passw, "valid"
+    else:
+        return passw, "invalid"
 
-with open('./files/second.txt', 'w') as file2:
-    file2.write("First string\nSecond string\n")
 
-with open('./files/second.txt') as file2:
-    print(file2.readlines())
-
-Path('./files/first.txt').unlink()
-Path('./files/second.txt').unlink()
-Path('./files').rmdir()
+print(check_password(input("enter password: ")))
