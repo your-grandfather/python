@@ -150,3 +150,12 @@
 #
 # 20
 def series_sum(n):
+    num = 0
+    while num < n:
+        yield num
+        num += 1
+        return 1 / (1 + 3 * num)
+
+
+a = 8
+print(sum(series_sum(a)))
